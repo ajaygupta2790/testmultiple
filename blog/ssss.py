@@ -1,0 +1,9 @@
+from enum import Enum, unique
+
+class PaymentModeRules(Enum):
+    OP = '{2,3,4,5,6,7,8}'
+    COD_OP = '{1,2,3,4,5,6,7,8}'
+    RULE_BASED = '{2,3,4,5,6,7,8}'
+
+ss = 'OP'
+print(PaymentModeRules.ss.value)
